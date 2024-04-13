@@ -1,0 +1,22 @@
+.header {
+    /* background-color: red; */
+}
+
+.menuicon {
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .header {
+        display: none;
+    }
+
+    .menuicon {
+        color: white;
+        display: block;
+        margin-left: 7%;
+
+    }
+
+}
