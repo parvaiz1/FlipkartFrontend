@@ -77,7 +77,7 @@ function Cart() {
   //payment
 
   async function PhonePepaymentButton(amount){
-    await axios.post("http://localhost:8080/paymentAPI/rzrPayment",{amount})
+    await axios.post("https://flip-api-mu.vercel.app/paymentAPI/rzrPayment",{amount})
     .then((res)=>{
       console.log(res.data)
         handleRazorPay(res.data.order)
