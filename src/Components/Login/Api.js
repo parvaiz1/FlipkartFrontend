@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const SignUpApi =async (data)=>{
 try{
-    return await  axios.post(`http://localhost:8080/UserAPI/signup`,data)
+    return await  axios.post(`https://flip-api-mu.vercel.app/UserAPI/signup`,data)
 }catch(err){
     console.log(("api call fail", err))
 }
@@ -10,7 +10,7 @@ try{
 
 export const LoginApi = async (data)=>{
     try{
-        return await axios.post("http://localhost:8080/UserAPI/Login",data)
+        return await axios.post("https://flip-api-mu.vercel.app/UserAPI/Login",data)
     }catch(err){
         console.log("api error is", err)
     }
@@ -18,7 +18,7 @@ export const LoginApi = async (data)=>{
 
 export const getProducts= async()=>{
     try{
-return await axios.get("http://localhost:8080/UserAPI/getProduct")
+return await axios.get("https://flip-api-mu.vercel.app/UserAPI/getProduct")
     }catch(err){
         console.log("error while fetching", err)
     }
@@ -34,7 +34,7 @@ return await axios.get("https://dummyjson.com/products")
 
 export const getDetailedProducts=async(id)=>{
     try{
-        return await axios.get(`http://localhost:8080/UserAPI/getDetailedProducts/${id}`)
+        return await axios.get(`https://flip-api-mu.vercel.app/UserAPI/getDetailedProducts/${id}`)
     }catch(err){
         console.log("error while fetching api", err)
     }
