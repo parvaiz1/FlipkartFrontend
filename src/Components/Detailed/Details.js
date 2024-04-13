@@ -93,7 +93,7 @@ function Details() {
 const adURL = 'https://rukminim1.flixcart.com/lockin/774/185/images/CCO__PP_2019-07-14.png?q=50';
 
 async function PhonePepaymentButton(amount){
-  await axios.post("http://localhost:8080/paymentAPI/rzrPayment",{amount})
+  await axios.post("https://flip-api-mu.vercel.app/paymentAPI/rzrPayment",{amount})
   .then((res)=>{
     console.log(res.data)
       handleRazorPay(res.data.order)
